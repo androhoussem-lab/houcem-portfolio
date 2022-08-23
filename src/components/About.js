@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 const About = ()=>{
     const {ref,inView} = useInView({
-        threshold : 0.3
+        threshold : 0.2
     });
     const animation = useAnimation();
 
@@ -14,6 +14,7 @@ const About = ()=>{
         if(inView){
             animation.start({
                 x : 0,
+                opacity:1,
                 transition:{
                     duration:2,
                     type : 'spring',
@@ -22,7 +23,8 @@ const About = ()=>{
         }
         if(!inView){
             animation.start({
-                x : '-100vw',
+                x : -50,
+                opacity:0,
                 transition:{
                     duration:2,
                     type : 'spring', 
@@ -34,7 +36,7 @@ const About = ()=>{
 
     return (
         <div ref={ref} id='about'>
-             <motion.section initial={{x:'-100vw'}} animate={animation}  className='flex flex-col justify-center items-center gap-4 lg:flex-row md:justify-between md:gap-0 pt-40 px-8'>
+             <motion.section initial={{x:-50 , opacity:0}} animate={animation}  className='relative flex flex-col justify-center items-center gap-4 lg:flex-row md:justify-between md:gap-0 mt-60 px-8'>
                 <div>
                     <h2 className='text-blue text-2xl font-bold md:text-3xl'>About me:</h2>
                     <p

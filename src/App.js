@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Menu from './components/Menu';
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -20,6 +20,11 @@ const App = ()=>{
     const scrollIntoView=(id)=>{
         document.getElementById(id).scrollIntoView({behavior:'smooth'});
     }
+
+
+    useEffect(()=>{
+        document.title = 'Houcem Portfolio'
+    },[])
 
 
     return (

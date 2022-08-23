@@ -29,7 +29,7 @@ const SkillCard = (props)=>{
             animation.start({
                 opacity:1,
                 transition:{
-                    duration:1 ,type:'spring',
+                    duration:2 ,type:'spring',
                 }
             });
         }
@@ -37,7 +37,7 @@ const SkillCard = (props)=>{
             animation.start({
                 opacity:0,
                 transition:{
-                    duration:1 , ease:'easeInOut' ,type:'spring'
+                    duration:2 , ease:'easeInOut' ,type:'spring'
                 }
             });
         }
@@ -75,7 +75,7 @@ const SkillCard = (props)=>{
         return icon;
     }
     return (
-    <div onClick={()=>props.toggleShowInfo(props.id)} className="relative z-50 w-full h-96 cursor-pointer mx-auto md:w-5/6 lg:w-full rounded-lg transition-all hover:bg-rose">
+    <div onClick={()=>props.toggleShowInfo(props.id)} className="relative z-40 w-full h-96 cursor-pointer mx-auto md:w-5/6 lg:w-full rounded-lg transition-all duration-200 hover:bg-gradient-to-b from-mirage to-purple">
         <div className='border-2 h-full w-full rounded-lg '>{getIcon(props.skill)}</div>
         {props.infoIsShow && (
                 <motion.div 

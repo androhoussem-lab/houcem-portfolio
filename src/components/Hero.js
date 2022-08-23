@@ -9,9 +9,9 @@ import {FaGithubSquare} from 'react-icons/fa'
 
 const Hero = (props)=>{
     return (
-        <section>
-            <LineWave className='my-auto h-full'/>
-            <div className='flex flex-col  lg:flex-row justify-between items-center px-8 pt-8'>
+        <section className='relative h-fit lg:h-96'>
+            <div className='absolute inset-0 top-40'><LineWave/></div>
+            <div className='flex flex-col  lg:flex-row justify-between items-center px-8 pt-40'>
                 <motion.div 
                     initial={{ x:'-100vw' , opacity:0 }}
                     animate={{ x: 0 , opacity:1 }}
@@ -39,7 +39,7 @@ const Hero = (props)=>{
                         transition={{ duration:2 ,type:'spring',delay:2,ease:'easeInOut' }} 
                         href='https://web.facebook.com/houssem.benseghir.1' 
                         target="_blank"
-                        className='z-50 text-4xl lg:text:3xl text-gray-50'>
+                        className='z-40 text-4xl lg:text:3xl text-gray-50'>
                         <motion.div whileHover={{scale:1.1}}><AiFillFacebook/></motion.div>
                     </motion.a>   
                     <motion.a 
@@ -48,7 +48,7 @@ const Hero = (props)=>{
                         transition={{ duration:2 ,type:'spring',delay:2.5,ease:'easeInOut' }} 
                         href='https://www.instagram.com/houssem_fullstack/?hl=fr' 
                         target="_blank"
-                        className='z-50 text-4xl lg:text:3xl text-gray-50'>
+                        className='z-40 text-4xl lg:text:3xl text-gray-50'>
                         <motion.div whileHover={{scale:1.1}}><FaInstagramSquare/></motion.div>
                     </motion.a>
                     <motion.a 
@@ -57,7 +57,7 @@ const Hero = (props)=>{
                         transition={{ duration:2 ,type:'spring',delay:3,ease:'easeInOut'}} 
                         href='https://www.linkedin.com/in/houcem-eddine-benseghir-477158238/' 
                         target="_blank"
-                        className='z-50 text-4xl lg:text:3xl text-gray-50'>
+                        className='z-40 text-4xl lg:text:3xl text-gray-50'>
                         <motion.div whileHover={{scale:1.1}}><AiFillLinkedin/></motion.div>
                     </motion.a>
                     <motion.a 
@@ -66,7 +66,7 @@ const Hero = (props)=>{
                         transition={{ duration:2 ,type:'spring',delay:3.5,ease:'easeInOut'}} 
                         href='https://github.com/androhoussem-lab'
                         target="_blank" 
-                        className='z-50 text-4xl lg:text:3xl text-gray-50'>
+                        className='z-40 text-4xl lg:text:3xl text-gray-50'>
                         <motion.div whileHover={{scale:1.1}}><FaGithubSquare/></motion.div>
                     </motion.a>
                 </div>

@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import { useState } from "react";
+import Menu from './components/Menu';
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Copyright from "./components/Copyright";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = ()=>{
+
+    const [menuIsShow , setMenuIsShow] = useState(false);
+
+    const toggleMenuShow = ()=>{
+        setMenuIsShow(prevState => !prevState);
+    }
+
+    const scrollIntoView=(id)=>{
+        document.getElementById(id).scrollIntoView({behavior:'smooth'});
+    }
+
+
+    return (
+        <div className="font-poppins bg-gradient-to-b from-mirage to-rose overflow-x-hidden selection:bg-pink-400">
+            {menuIsShow
+            ?<Menu toggleMenuShow={toggleMenuShow}/>
+            :<div className="font-poppins bg-gradient-to-b from-mirage via-purple to-rose">
+            <Navbar onNavItemClick={scrollIntoView} toggleMenuShow={toggleMenuShow}/>
+            <Hero scrollIntoView={scrollIntoView}/>
+            <About/>
+            <Skills/>
+            <Portfolio/>
+            <Contact/>
+            <Copyright/>
+        </div>}
+        </div>
+        
+    );
 }
+
 
 export default App;

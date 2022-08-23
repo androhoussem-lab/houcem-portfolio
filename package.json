@@ -2,9 +2,11 @@
   "name": "personel-portfolio",
   "version": "0.1.0",
   "private": true,
-  "node" : "18.0.0",
-  "npm" : "8.17.0",
   "homepage": "https://androhoussem-lab.github.io/houcem-portfolio/",
+  "engines": {
+    "node" : "18.0.0",
+    "npm" : "8.17.0"
+  },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@testing-library/jest-dom": "^5.16.5",

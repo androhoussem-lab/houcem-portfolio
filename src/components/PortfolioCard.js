@@ -29,7 +29,7 @@ const SkillCard = (props)=>{
 
     return (
     <div onClick={()=>props.toggleShowInfo(props.id)} className="relative w-full grid-flow-row cursor-pointer mx-auto rounded-lg">
-        <img src={props.image} alt="project" className='relative w-full lg:h-[60rem] filter saturate-100'/>
+        <img src={props.image} alt="project" className='relative w-full lg:h-[60rem] filter saturate-100 rounded-lg'/>
         {props.infoIsShow && (
                 <motion.div 
                     initial={{opacity:0}} 

@@ -2,7 +2,7 @@
   "name": "personel-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://androhoussem-lab.github.io/houcem-portfolio/",
+  "homepage": "https://houcem-portfolio.github.io/houcem-portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@testing-library/jest-dom": "^5.16.5",
@@ -18,11 +18,12 @@
     "react-toastify": "^9.0.8",
     "web-vitals": "^2.1.4"
   },
-   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+  "scripts": {
+    "start": "npm run build:css && react-scripts start",
+    "build": "NODE_ENV=production npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "build:css": "postcss index.css -o src/main.css",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

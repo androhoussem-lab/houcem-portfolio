@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/houcem-portfolio/static/css/main.8c495770.css",
-    "main.js": "/houcem-portfolio/static/js/main.9291e355.js",
+    "main.js": "/houcem-portfolio/static/js/main.ccf4bc02.js",
     "static/media/darna.jpg": "/houcem-portfolio/static/media/darna.79433e378bd16afdeebc.jpg",
     "static/media/amusement.jpg": "/houcem-portfolio/static/media/amusement.023b524f18200430eb4c.jpg",
     "static/media/hafadni.jpg": "/houcem-portfolio/static/media/hafadni.d1d694744037ba245bf8.jpg",
@@ -17,10 +17,10 @@
     "static/media/quran.jpeg": "/houcem-portfolio/static/media/quran.aa5f78008deb7a58936e.jpeg",
     "index.html": "/houcem-portfolio/index.html",
     "main.8c495770.css.map": "/houcem-portfolio/static/css/main.8c495770.css.map",
-    "main.9291e355.js.map": "/houcem-portfolio/static/js/main.9291e355.js.map"
+    "main.ccf4bc02.js.map": "/houcem-portfolio/static/js/main.ccf4bc02.js.map"
   },
   "entrypoints": [
     "static/css/main.8c495770.css",
-    "static/js/main.9291e355.js"
+    "static/js/main.ccf4bc02.js"
   ]
 }

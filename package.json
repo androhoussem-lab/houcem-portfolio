@@ -23,7 +23,7 @@
     "build": "NODE_ENV=production npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:css": "postcss index.css -o src/main.css",
+    "build:css": "postcss src/index.css -o src/main.css",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

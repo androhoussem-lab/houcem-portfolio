@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/houcem-portfolio/static/css/main.8c495770.css",
+    "main.js": "/houcem-portfolio/static/js/main.9291e355.js",
+    "static/media/darna.jpg": "/houcem-portfolio/static/media/darna.79433e378bd16afdeebc.jpg",
+    "static/media/amusement.jpg": "/houcem-portfolio/static/media/amusement.023b524f18200430eb4c.jpg",
+    "static/media/hafadni.jpg": "/houcem-portfolio/static/media/hafadni.d1d694744037ba245bf8.jpg",
+    "static/media/e-commerce.png": "/houcem-portfolio/static/media/e-commerce.eb94c860cb9c7aa4deee.png",
+    "static/media/hearty.jpg": "/houcem-portfolio/static/media/hearty.095dc8cccfda09eea46b.jpg",
+    "static/media/course.png": "/houcem-portfolio/static/media/course.1606b57a7fc77d8c8a0b.png",
+    "static/media/animation.png": "/houcem-portfolio/static/media/animation.fbda7e3002435f46e2ae.png",
+    "static/media/photo.png": "/houcem-portfolio/static/media/photo.08eb727f340071010f7f.png",
+    "static/media/agile.jpg": "/houcem-portfolio/static/media/agile.f63573e531ab1e6d7f61.jpg",
+    "static/media/memory.png": "/houcem-portfolio/static/media/memory.4f27ec055b042e36aafa.png",
+    "static/media/photo-02.png": "/houcem-portfolio/static/media/photo-02.829179aa81e215662125.png",
+    "static/media/crud.png": "/houcem-portfolio/static/media/crud.9a38e0f5084bafd410ad.png",
+    "static/media/quran.jpeg": "/houcem-portfolio/static/media/quran.aa5f78008deb7a58936e.jpeg",
+    "index.html": "/houcem-portfolio/index.html",
+    "main.8c495770.css.map": "/houcem-portfolio/static/css/main.8c495770.css.map",
+    "main.9291e355.js.map": "/houcem-portfolio/static/js/main.9291e355.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c495770.css",
+    "static/js/main.9291e355.js"
+  ]
+}
